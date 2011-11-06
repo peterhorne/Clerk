@@ -8,7 +8,7 @@ class Bool extends Field {
 		'required' => true,
 	);
 	
-	public function __construct($value) {
+	public function __construct($name, $value) {
 		$this->value = (bool)$value;
 	}	
 }

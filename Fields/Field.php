@@ -14,7 +14,7 @@ class Field {
 		'not_equals' => null,
 	);
 	
-	public function __construct($value) {
+	public function __construct($name, $value) {
 		$this->value = $value;
 	}
 	

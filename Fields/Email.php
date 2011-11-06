@@ -4,8 +4,8 @@ namespace Fields;
 
 class Email extends Field {
 	
-	public function __construct($value) {
-		parent::__construct($value);
+	public function __construct($name, $value) {
+		parent::__construct($name, $value);
 		$this->attributes['type'] = 'email';
 	}
 	

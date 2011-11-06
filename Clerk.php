@@ -28,7 +28,7 @@ class Clerk {
 	 */
 	public function addField($type, $name) {
 		$args = func_get_args();
-		unset($args[0]); // Remove $type from $args
+		$args[0] = $name; // Replace $type with $name
 		$args[1] = isset($this->values[$name]) ? $this->values[$name] : null; // Replace $name with the field's value
 		
 		$reflection = new ReflectionClass("Fields\\$type");
